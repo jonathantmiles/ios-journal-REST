@@ -12,12 +12,26 @@ class EntriesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let entryController = EntryController()
+        
+            entryController.createEntry(title: "Cars", bodyText: "A note about cars") { (error) in
+                if let error = error {
+                    NSLog("Error mock1: \(error)")
+                    return
+                }
+            }
+            entryController.createEntry(title: "Nature", bodyText: "A note about nature stuff.") { (error) in
+                if let error = error {
+                    NSLog("Error mock2: \(error)")
+                    return
+                }
+            }
+            entryController.createEntry(title: "Macaroni", bodyText: "A note about pastas...?") { (error) in
+                if let error = error {
+                    NSLog("Error mock3: \(error)")
+                    return
+                }
+            }
     }
 
     override func didReceiveMemoryWarning() {

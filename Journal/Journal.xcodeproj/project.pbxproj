@@ -14,6 +14,8 @@
 		F864381C211CCECA0046A496 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864381B211CCECA0046A496 /* EntriesTableViewController.swift */; };
 		F864381F211CD0790046A496 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864381E211CD0790046A496 /* EntryTableViewCell.swift */; };
 		F8643821211CD1C30046A496 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8643820211CD1C30046A496 /* EntryDetailViewController.swift */; };
+		F8643824211CD2950046A496 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8643823211CD2950046A496 /* Entry.swift */; };
+		F8643827211CD3670046A496 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8643826211CD3670046A496 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F864381B211CCECA0046A496 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		F864381E211CD0790046A496 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		F8643820211CD1C30046A496 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		F8643823211CD2950046A496 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		F8643826211CD3670046A496 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			children = (
 				F8643808211CCC9A0046A496 /* AppDelegate.swift */,
 				F864380C211CCC9A0046A496 /* Main.storyboard */,
+				F8643822211CD2860046A496 /* Models */,
+				F8643825211CD3530046A496 /* ModelControllers */,
 				F864381A211CCEA00046A496 /* ViewControllers */,
 				F864381D211CD04A0046A496 /* TableViewCell */,
 				F864380F211CCC9B0046A496 /* Assets.xcassets */,
@@ -84,6 +90,22 @@
 				F864381E211CD0790046A496 /* EntryTableViewCell.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		F8643822211CD2860046A496 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8643823211CD2950046A496 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8643825211CD3530046A496 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8643826211CD3670046A496 /* EntryController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8643827211CD3670046A496 /* EntryController.swift in Sources */,
 				F864381F211CD0790046A496 /* EntryTableViewCell.swift in Sources */,
 				F864381C211CCECA0046A496 /* EntriesTableViewController.swift in Sources */,
 				F8643821211CD1C30046A496 /* EntryDetailViewController.swift in Sources */,
 				F8643809211CCC9A0046A496 /* AppDelegate.swift in Sources */,
+				F8643824211CD2950046A496 /* Entry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
